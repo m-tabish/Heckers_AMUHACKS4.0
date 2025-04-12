@@ -47,8 +47,8 @@ function AllProjects({ deleteFunction, className, project }) {
     }, [deleteId, setDeleteId])
 
     return (
-        <Card className={`${className} bg-transparent w-screen flex p-4 rounded  outline-none  border-none  `}  >
-            <CardHeader className="w-1/2 text-right flex  ">
+        <Card className={`${className}  bg-transparent w-screen flex p-4 rounded  outline-none  border-none  `}  >
+            <CardHeader className="w-1/2 text-right flex text-white ">
                 <CardTitle className=" text-lg flex flex-col gap-2 font-semibold  border-none outline-none">{project.projectname}
                     <div className="flex-end  ">
                         {project.technologies && project.technologies.map((lang, index) => {
@@ -56,7 +56,7 @@ function AllProjects({ deleteFunction, className, project }) {
                                 <Badge
                                     key={index}
                                     variant={"outline"}
-                                    className="self-end ml-1 text-xs w-fit items-center border-black"
+                                    className="self-end ml-1 text-xs w-fit items-center border-white/30 text-white/60"
                                 >
                                     {lang.trim()}
                                 </Badge>
@@ -68,9 +68,9 @@ function AllProjects({ deleteFunction, className, project }) {
             <CardContent className="w-full  flex flex-grow items-center font-sans">
                 <p>{project.projectDescription}</p>
             </CardContent>
-            <CardFooter className="w-1/3 gap-2 ">
-                <Button onClick={() => clickedView(project._id)}>View</Button>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPaKwDIXYElN8y62tHemR1Y6qJODqNN087dPEApgNJtCrXdw/viewform?usp=sharing" target='_blank' className='flex-col flex items-center' ><Button >Feedback</Button></a>
+            <CardFooter className="w-1/3 gap-2  ">
+                <Button className="bg-white text-black" onClick={() => clickedView(project._id)}>View</Button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPaKwDIXYElN8y62tHemR1Y6qJODqNN087dPEApgNJtCrXdw/viewform?usp=sharing" target='_blank' className='flex-col flex items-center ' ><Button >Feedback</Button></a>
 
                 {/* <Button variant={"outline"} onClick={() => deleteProject(project._id)}><Trash2 /></Button> */}
             </CardFooter>

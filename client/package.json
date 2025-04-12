@@ -20,11 +20,14 @@
 		"@radix-ui/react-scroll-area": "^1.1.0",
 		"@radix-ui/react-slot": "^1.1.2",
 		"@reduxjs/toolkit": "^2.2.7",
+		"@vercel/analytics": "^1.5.0",
 		"@xyflow/react": "^12.0.4",
 		"axios": "^1.7.3",
 		"class-variance-authority": "^0.7.0",
 		"client": "file:",
 		"clsx": "^2.1.1",
+		"countapi": "^1.0.0",
+		"countapi-js": "^1.0.2",
 		"dagre": "^0.8.5",
 		"dotenv": "^16.4.7",
 		"embla-carousel-react": "^8.3.0",
@@ -40,6 +43,7 @@
 		"serve": "^14.2.3",
 		"tailwind-merge": "^2.5.2",
 		"tailwindcss-animate": "^1.0.7",
+		"vercel": "^41.6.0",
 		"zod": "^3.24.2"
 	},
 	"devDependencies": {

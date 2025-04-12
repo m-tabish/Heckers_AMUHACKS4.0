@@ -5,14 +5,15 @@ import countapi from "countapi-js";
 import { ArrowDown, Loader2, SquareArrowOutUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import bg from "./assets/bg-black-bg.png";
+// import bg from "./assets/download.jpeg";
+import bg from "./assets/1.jpeg";
 import logo from "./assets/logo.png";
 import AllProjects from "./components/AllProjects";
+import Socials from "./components/Socials";
 import { Button } from "./components/ui/button";
 import { Input } from "./components/ui/input";
 import { Textarea } from "./components/ui/textarea";
 import { addProject } from "./slices/projectSlice";
-import Socials from "./components/Socials";
 
 function App() {
   async function call_backend() {
@@ -114,12 +115,11 @@ function App() {
       <div className='h-screen flex flex-col  min-w-screen justify-center items-center overflow-visible overscroll-contain'>
         <div className="flex flex-col gap-3 scroll-my-0">
           <div className='text-center flex flex-col  text-black   tracking-wider mb-10 flex-wrap  items-center'>
-            <a className="hover:underline  w-[300px] text-transparent h-24 mx-auto bg-center  font-extrabold  justify-between flex items-center gap-10 z-10 text-3xl " href="https://x.com/damnthesebugs/status/1840646848270492084" target="_blank" rel="noopener noreferrer " style={{ backgroundImage: `url(${logo})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
-              <div> BUILD FLOW</div>
-              <SquareArrowOutUpRight size={"1rem"} color="black" />
+            <a className="hover:underline  text-transparent h-24 mx-auto bg-center  font-extrabold  justify-end w-3/4 flex items-center gap-10 z-10 text-3xl " href="https://x.com/damnthesebugs/status/1840646848270492084" target="_blank" rel="noopener noreferrer " style={{ backgroundImage: `url(${logo})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}> 
+              <SquareArrowOutUpRight size={"1rem"}  color="white" />
             </a>
-            <div className="text-2xl font-semibold  text-white/80">Generate a Roadmap for your next project.</div>
-            <div className="text-base font-semibold  text-black">Scroll down to see latest roadmaps <ArrowDown size={"1em"} className=" inline animate-bounce" />
+            <div className="text-2xl font-semibold  text-white">Generate a Roadmap for your next project.</div>
+            <div className="text-base font-semibold  text-white/60">Scroll down to see latest roadmaps <ArrowDown size={"1em"}  className=" inline animate-bounce" />
             </div>
           </div>
 
@@ -164,7 +164,7 @@ function App() {
               />
               <Button
                 type='submit'
-                className=' bg-transparent    hover:border-1 hover:border-black  shadow-lg hover:bg-pink-200 hover:text-purple-600 shadow-purple-600 text-2xl font-bold text-white p-1  mt-10 '
+                className=' bg-transparent    hover:border-1 hover:border-black  shadow-lg hover:bg-pink-200 hover:text-purple-600 shadow-blue-600 text-2xl font-bold text-white p-1  mt-10 '
                 variant="outline"
               >
 
@@ -190,11 +190,11 @@ function App() {
 
       {/* Showing all the projects made till now  */}
 
-      <div className="  w-full text-center text-4xl mt-[10%] font-mono text-black/80">Check out what people have made <ArrowDown className="hover:translate-y-3 inline animate-bounce" /></div>
+      <div className="  w-full text-center text-4xl mt-[10%] font-mono text-white/80">Check out what people have made <ArrowDown className="hover:translate-y-3 inline animate-bounce" /></div>
 
 
       {projects ? ((projects.reverse()).map((project, index) => (
-        <AllProjects className={" relative  z-50 "} project={project} key={project._id} />
+        <AllProjects className={" text-white relative  z-50 "} project={project} key={project._id} />
       ))) : (<div>No projects found</div>)}
 
 
