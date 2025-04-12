@@ -8,7 +8,7 @@ const initialState = {
         language: ""
     },
     viewProject: "ID 12345",
-    serverURL: "https://buildflow-backend.onrender.com"
+    serverURL: "https://heckers-amuhacks4-0.onrender.com"
     // serverURL: "http://localhost:3000"
 
 
@@ -20,7 +20,7 @@ const projectSlice = createSlice({
     reducers: {
         addProject: (state, action) => {
             // Directly update state.userInput
-            state.userInput.project = action.payload.project;
+            state.userInput.projectname = action.payload.projectname;
             state.userInput.projectDescription = action.payload.projectDescription;
             state.userInput.language = action.payload.language;
         },

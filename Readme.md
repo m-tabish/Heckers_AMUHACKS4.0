@@ -1,106 +1,133 @@
-# 🚀 Blueprint
- 
+Here's your updated project description with all the requested additions, formatting improvements, and relevant tags for your AMU Hacks 4.0 submission:
 
-## Project Overview
+---
 
-**Blueprint** is a web application that utilizes the [Gemini API](https://gemini.com) to return JSON responses. These responses are then populated in the frontend to create and visualize flowcharts using the [React Flow](https://reactflow.dev/) library.
+# 🚀 Blueprint  
 
-## Installation 🛠️
+> **Built with 💡 at AMU Hacks 4.0**  
+> Team Members: Mohd Tabish Khan, Abhay Singh, Pratham Mohan and Aayushmaan Saxena
 
-### Prerequisites
+## Project Overview  
 
-Before starting, ensure you have the following installed:
+**Blueprint** is a web application designed for **AMU Hacks 4.0** that leverages the power of the [Gemini API](https://gemini.com) to generate structured JSON responses. These responses are then dynamically rendered as interactive flowcharts on the frontend using [React Flow](https://reactflow.dev/). The goal is to help users visualize processes, learning roadmaps, and system workflows with ease.  
 
-- **Node.js**: Download from [nodejs.org](https://nodejs.org/).
-- **npm**: Package manager that comes with Node.js.
+---
 
-### Steps to Install
-a
-1. **Clone the Repository**
+## Installation 🛠️  
 
-   Begin by cloning the repository to your local machine:
+### Prerequisites  
 
+Ensure the following are installed before proceeding:  
+- **Node.js**: [Download here](https://nodejs.org/)  
+- **npm**: Comes bundled with Node.js  
+
+### Steps to Install  
+
+1. **Clone the Repository**  
    ```bash
    git clone git@github.com:m-tabish/Heckers_AMUHACKS4.0.git
-
    ```
 
-2. **Navigate to Project Directory**
-
-    Change to the project directory:
-    ```bash
-       
-       cd <projectDirectory>
-
-    ```
-3. **Install Backend Dependencies**
- 
-   Navigate to the backend directory (if applicable) and install dependencies:
+2. **Navigate to Project Directory**  
    ```bash
-    cd backend
-    npm install
+   cd <projectDirectory>
    ```
-4. **Install Frontend Dependencies**
 
-    Navigate to the frontend directory (if applicable) and install dependencies:
-    ```bash
-     cd client
-     npm install
-    ```
-## Running the Application
-1. **Start Backend Server**
-
-   From the backend directory, run:
+3. **Install Backend Dependencies**  
+   ```bash
+   cd backend
+   npm install
    ```
+
+4. **Install Frontend Dependencies**  
+   ```bash
+   cd ../client
+   npm install
+   ```
+
+---
+
+## Environment Setup 🌐  
+
+Create a `.env` file in the `backend` directory and set the following variables:
+
+```env
+CONNECTION_URL=your_mongodb_connection_string_here
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+---
+
+## Running the Application  
+
+1. **Start Backend Server**  
+   ```bash
+   cd backend
    npm run dev
    ```
 
-2. **Start Frontend Application**
-
-   From the client directory, run:
-   ```
+2. **Start Frontend Application**  
+   ```bash
+   cd ../client
    npm run dev
    ```
-3. **Access the Application**
-    
-    Open your browser and go to http://localhost:5173 (or the port specified in your configuration) to access the application's frontend
-    and http://localhost:3000 for the server.
 
-## Contributing 🤝
+3. **Access the App**  
+   - Frontend: [http://localhost:5173](http://localhost:5173)  
+   - Backend: [http://localhost:3000](http://localhost:3000)  
 
-Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
+---
 
+## Technical Stack  
 
-## Technical Stack
+### Backend  
+- **Framework**: [Express.js](https://expressjs.com/)  
+- **API**: Integration with Gemini API for generating JSON-based flowchart content  
 
-### Backend
+### Frontend  
+- **Framework**: [React.js](https://reactjs.org/)  
+- **Flowchart Tool**: [React Flow](https://reactflow.dev/)  
+- **State Management**: React's built-in state management  
 
-- **Framework**: [Express.js](https://expressjs.com/), a minimal and flexible Node.js web application framework. 
-- **API Interaction**: The backend interacts with the Gemini API to fetch data necessary for generating flowcharts.
+---
 
-### Frontend
+## Features 🌟  
 
-- **Library**: [React Flow](https://reactflow.dev/), a library for building interactive flowcharts and node-based applications in React.
-- **State Management**: Utilizes React's state management to handle the flowchart data received from the backend.
+- ⚙️ **Dynamic Flowchart Generation** from AI-generated JSON  
+- 🧠 **AI-Powered Suggestions** for nodes and steps  
+- 🧩 **User Interaction** for modifying flowcharts  
+- 🛠️ **Frontend-Backend Integration** using Gemini API  
 
-## Features 🌟
+---
 
-- **Dynamic Flowchart Generation**: Users can create flowcharts dynamically based on the data fetched from the Gemini API.
-- **User Interaction**: The React Flow library allows for user interaction, enabling users to modify flowcharts easily.
+## Issues Encountered ⚠️  
 
-## Issues Encountered ⚠️
+- **Inconsistent API Responses** from the deployed Railway server (success rate ~60%)  
+- **Concurrency Limitations** potentially due to free-tier deployment  
 
-- **Inconsistent API Responses**: The deployed server on Railway.app sometimes returns responses only 3 out of 5 times. Possible causes could include resource limitations, timeouts, or issues with handling multiple simultaneous requests.
-- **Concurrency Handling**: There might be concerns about how the server handles multiple requests, especially if it is not designed to manage concurrent requests effectively.
+---
 
-## Future Considerations 🔮
+## Future Considerations 🔮  
 
-- **Collaboration**: Introduce a feature that allows users to collaborate on generating a roadmap, enabling multiple users to contribute and refine the flowchart together.
+- 🤝 **Real-time Collaboration** on roadmaps  
+- ✏️ **Editable AI Output** for customization  
+- 🧱 **Manual Roadmap Creation** option for full user control  
 
-- **Customizability**: Add functionality for users to edit specific nodes or code generated by the AI, allowing for a more personalized and tailored roadmap that meets individual needs.
+---
 
-- **Manual Roadmap Creation**: Implement an option for users to create roadmaps manually without relying on AI. This will give users full control from the start, allowing them to add or remove steps and assign tasks to specific team members.
+## Contributing 🤝  
 
-Contact 📧
-For questions or inquiries, please visit https://www.tabishcodes.me
- Thank you for using Blueprint! We hope it helps you visualize your ideas effectively! 🎉
+Have an idea or feature in mind?  
+Feel free to fork the repo and submit a PR. Contributions are highly appreciated!  
+
+---
+
+## Contact 📧  
+
+For questions, reach out at [mohdtabishkhan001@gmail.com](#)
+
+---
+
+### 🔖 Hashtags  
+#Blueprint #AMUHACKS4.0 #CSSAMU #AMU #ReactFlow #GeminiAPI
+ 

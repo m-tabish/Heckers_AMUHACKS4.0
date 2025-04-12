@@ -5,8 +5,7 @@ import countapi from "countapi-js";
 import { ArrowDown, Loader2, SquareArrowOutUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import bg from "./assets/download.jpeg";
-import bg from "./assets/1.jpeg";
+import bg from "./assets/2.jpg";
 import logo from "./assets/logo.png";
 import AllProjects from "./components/AllProjects";
 import Socials from "./components/Socials";
@@ -18,7 +17,7 @@ import { addProject } from "./slices/projectSlice";
 function App() {
   async function call_backend() {
     try {
-      const resp = await axios.get("https://buildflow-backend.onrender.com/")
+      const resp = await axios.get(`${serverURL}/projects`)
       console.log('backend hit', resp.data);
     }
     catch (e) {
@@ -107,8 +106,8 @@ function App() {
   return (
     <div className={`h-screen  bg-cover bg-fixed  bg-center m-auto bg-black/10 text-white overflow-none  shadow-none  bg-no-repeat  overflow-x-hidden`}>
       <Analytics />
-      <Socials className={'absolute top-1/3 bg-white rounded-sm'} />
-      <p className="text-center  text-red-400 ">NOTE:Since the backend is hosted on a free tier on Render, it takes <span className="font-black text-[#f01200]">50 seconds</span> for the server to start.</p>
+      {/* <Socials className={'absolute top-1/3 bg-white rounded-sm'} /> */}
+      <p className="text-center  text-blue-800 ">NOTE:Since the backend is hosted on a free tier on Render, it takes <span className="font-black text-blue-900">50 seconds</span> for the server to start.</p>
 
       <div className="fixed -z-20 inset-0 bg-cover bg-center " style={{ backgroundImage: `url(${bg})`, backgroundBlendMode: 'hard-light', opacity: "90%" }}>
       </div>
@@ -164,7 +163,7 @@ function App() {
               />
               <Button
                 type='submit'
-                className=' bg-transparent    hover:border-1 hover:border-black  shadow-lg hover:bg-pink-200 hover:text-purple-600 shadow-blue-600 text-2xl font-bold text-white p-1  mt-10 '
+                className=' bg-transparent    hover:border-1 hover:border-black  shadow-lg hover:bg-blue-200 hover:text-blue-600 shadow-blue-600 text-2xl font-bold text-white p-1  mt-10 '
                 variant="outline"
               >
 
