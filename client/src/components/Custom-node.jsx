@@ -24,11 +24,11 @@ export default function CustomNode({ data }) {
     const darkClass = 'border border-black text-black bg-white';
     const lightClass = 'border border-black text-white bg-black';
     // const currentClass = colorMode === 'dark' ? darkClass : lightClass;
-    const currentClass = "bg-amber-300"
+    const currentClass = "bg-white"
 
 
     return (
-        <div className="flex gap-2 items-center relative ">
+        <div className="flex gap-2 items-center relative  ">
             <div className={`relative text-center font-bold rounded-lg w-[200px] h-auto min-h-[50px] text-xs whitespace-normal p-1 flex flex-col justify-center items-center gap-1 ${currentClass}`}>
 
                 <Handle type="target" position={Position.Top} id="1" />
@@ -36,12 +36,12 @@ export default function CustomNode({ data }) {
 
                 {/* Code button */}
                 <Dialog >
-                    <DialogTrigger className="bg-red-300 pl-3 pr-3 rounded-sm">Code</DialogTrigger>
-                    <DialogContent className=" max-w-2xl max-h-[500px] overflow-scroll">
+                    <DialogTrigger className="bg-[#3f46a5] py-1 px-3 text-white rounded-sm">Code</DialogTrigger>
+                    <DialogContent className=" max-w-2xl max-h-[500px] overflow-scroll ">
                         <DialogHeader>
                             <DialogTitle className=" ">Code</DialogTitle>
                             <DialogDescription className="max-h-1/2 max-w-4xl whitespace-pre-wrap  break-words">
-                                <div className="m-1">{JSON.stringify(parsedData.description)}</div>
+                                <div className="m-1  ">{JSON.stringify(parsedData.description)}</div>
                                 <SyntaxHighlighter wrapLongLines={true} language="javascript" style={vs2015}>
                                     {parsedData.code}
                                 </SyntaxHighlighter>
@@ -52,7 +52,7 @@ export default function CustomNode({ data }) {
 
                 {/* Resources Button */}
                 <Dialog>
-                    <DialogTrigger className="bg-orange-300 pl-3 pr-3 rounded-sm">Resources</DialogTrigger>
+                    <DialogTrigger className="bg-[#3b6697] px-3 py-1 text-center  rounded-sm text-white">Resources</DialogTrigger>
                     <DialogContent className="max-h-1/2 max-w-2xl ">
                         <DialogHeader>
                             <DialogTitle>Resources</DialogTitle>

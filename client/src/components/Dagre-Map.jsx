@@ -126,7 +126,7 @@ const LayoutFlow = () => {
                 noWheelClassName='nowheel'
                 panOnDrag={true}
             >
-                <Background bgColor='#9333ea80' color="#fff" variant={BackgroundVariant.Dots} />
+                <Background bgColor='#2d66bd' color="#fff" variant={BackgroundVariant.Dots} />
                 <Panel position="top-left" className='text-white'
                     onClick={() => navigate("/")}>
                     <Button variant="default" size="icon">

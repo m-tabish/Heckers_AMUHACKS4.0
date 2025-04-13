@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 dotenv.config()
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
- 
+
 async function generateContent({ projectname, projectDescription, language }) {
 
 
@@ -25,9 +25,9 @@ Your response should be a valid JSON object that adheres to the following schema
         "nodeId": "{unique_id}",
         "process": "{node_title}",  
         "description": "{node_description}",
-        "code": "{code_snippet}",
+        "code": "{ Give proper code don't just comment and do not leave empty methods. Create proper methods in each step. IT has to be atleast 5 lines and can contain code from previous steps. Give sample code body}",
         "resources": [
-          "{most important and relevant relative_link_1}", 
+          "{most important and relevant relative_link_1 to the home page . Ensure it is a legit link and not a 404}", 
         ],
         "target": [
           "{target_node_id_1}",
@@ -60,7 +60,7 @@ Follow these guidelines when generating the roadmap:
    a. Assign a unique nodeId.
    b. Provide a clear and concise process title.
    c. Write a detailed description of the step, by step  its purpose and importance in the project.
-   d. Include a relevant code snippet that demonstrates the implementation of this step. The code should be in the specified programming language and as specific as possible to the project requirements.
+   d. Include a relevant code snippet that demonstrates the implementation of this step. The code should be in the specified programming language and as descriptive as possible to the project requirements. Do not give empty methods. Always include more than 5 lines of code with proper code not comments.
    e. Provide at least two relevant resources (such as documentation links, tutorials, or articles) that can help with implementing this step.
    f. Specify the target node(s) that logically follow this step in the development process.
 

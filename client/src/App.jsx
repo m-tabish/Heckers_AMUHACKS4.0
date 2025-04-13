@@ -114,9 +114,9 @@ function App() {
       <div className='h-screen flex flex-col  min-w-screen justify-center items-center overflow-visible overscroll-contain'>
         <div className="flex flex-col gap-3 scroll-my-0">
           <div className='text-center flex flex-col  text-black   tracking-wider mb-10 flex-wrap  items-center'>
-            <a className="hover:underline  text-transparent h-24 mx-auto bg-center  font-extrabold  justify-end w-3/4 flex items-center gap-10 z-10 text-3xl " href="https://x.com/damnthesebugs/status/1840646848270492084" target="_blank" rel="noopener noreferrer " style={{ backgroundImage: `url(${logo})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}> 
-              <SquareArrowOutUpRight size={"1rem"}  color="white" />
-            </a>
+            <div className="hover:underline  text-transparent h-24 mx-auto bg-center  font-extrabold  justify-end w-3/4 flex items-center gap-10 z-10 text-3xl "   target="_blank" rel="noopener noreferrer " style={{ backgroundImage: `url(${logo})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
+             
+            </div>
             <div className="text-2xl font-semibold  text-white">Generate a Roadmap for your next project.</div>
             <div className="text-base font-semibold  text-white/60">Scroll down to see latest roadmaps <ArrowDown size={"1em"}  className=" inline animate-bounce" />
             </div>
