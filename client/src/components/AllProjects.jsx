@@ -69,8 +69,8 @@ function AllProjects({ deleteFunction, className, project }) {
                 <p>{project.projectDescription}</p>
             </CardContent>
             <CardFooter className="w-1/3 gap-2  ">
-                <Button className="bg-white text-black" onClick={() => clickedView(project._id)}>View</Button>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPaKwDIXYElN8y62tHemR1Y6qJODqNN087dPEApgNJtCrXdw/viewform?usp=sharing" target='_blank' className='flex-col flex items-center ' ><Button >Feedback</Button></a>
+                <Button className="bg-white text-black hover:text-white" onClick={() => clickedView(project._id)}>View</Button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPaKwDIXYElN8y62tHemR1Y6qJODqNN087dPEApgNJtCrXdw/viewform?usp=sharing" target='_blank' className='flex-col flex items-center ' ><Button className="  active:bg-[#2d66bd] ">Feedback</Button></a>
 
                 {/* <Button variant={"outline"} onClick={() => deleteProject(project._id)}><Trash2 /></Button> */}
             </CardFooter>
