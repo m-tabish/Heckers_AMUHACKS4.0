@@ -21,7 +21,7 @@ export default async function getData({ serverURL, id }) {
             position: { x: 0, y: parseInt(nodeId) * 100 }, // Set default position
             draggable: false,
             resizing: true,
-            nodeType: "group"
+            nodeType: "group",
           };
         }
         return null; // Filter out invalid nodes
@@ -38,7 +38,7 @@ export default async function getData({ serverURL, id }) {
             source: source,
             target: target,
             type: "default",
-            style: { stroke: "red" }
+            style: { stroke: "beige", strokeWidth: 2 }
           };
         }
         return null; // Filter out invalid edges

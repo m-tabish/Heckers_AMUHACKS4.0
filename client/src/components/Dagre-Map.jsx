@@ -125,6 +125,8 @@ const LayoutFlow = () => {
                 preventScrolling={false}
                 noWheelClassName='nowheel'
                 panOnDrag={true}
+
+
             >
                 <Background bgColor='#2d66bd' color="#fff" variant={BackgroundVariant.Dots} />
                 <Panel position="top-left" className='text-white'
@@ -133,7 +135,7 @@ const LayoutFlow = () => {
                         <ChevronLeft className="h-4 w-4" />
                     </Button>
                 </Panel>
-                
+
             </ReactFlow>
         </div >
     );
