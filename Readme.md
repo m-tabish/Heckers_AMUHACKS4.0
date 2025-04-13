@@ -2,14 +2,17 @@ Here's your updated project description with all the requested additions, format
 
 ---
 
-# 🚀 Blueprint  
+# 🚀 Bluprnt  
+### **🏆Built for AMU Hacks 4.0 by Team Heckers**  
+### **🤝Team Members: Mohd Tabish Khan, Abhay Singh, Pratham Mohan and Aayushmaan Saxena**
+# Visit  [🔹BluPrnt🔹](https://www.bluprnt.tech/)
+### Backend hosted on Render:  [https://heckers-amuhacks4-0.onrender.com](https://heckers-amuhacks4-0.onrender.com)
 
-> **Built with 💡 at AMU Hacks 4.0**  
-> Team Members: Mohd Tabish Khan, Abhay Singh, Pratham Mohan and Aayushmaan Saxena
+
 
 ## Project Overview  
 
-**Blueprint** is a web application designed for **AMU Hacks 4.0** that leverages the power of the [Gemini API](https://gemini.com) to generate structured JSON responses. These responses are then dynamically rendered as interactive flowcharts on the frontend using [React Flow](https://reactflow.dev/). The goal is to help users visualize processes, learning roadmaps, and system workflows with ease.  
+**Bluprnt** is a web application designed for **AMU Hacks 4.0** that leverages the power of the [Gemini API](https://gemini.com) to generate structured JSON responses. These responses are then dynamically rendered as interactive flowcharts on the frontend using [React Flow](https://reactflow.dev/). The goal is to help users visualize processes, learning roadmaps, and system workflows with ease.  
 
 ---
 
@@ -129,5 +132,5 @@ For questions, reach out at [mohdtabishkhan001@gmail.com](#)
 ---
 
 ### 🔖 Hashtags  
-#Blueprint #AMUHACKS4.0 #CSSAMU #AMU #ReactFlow #GeminiAPI
+#Bluprnt #AMUHACKS4.0 #CSSAMU #AMU #ReactFlow #GeminiAPI
  
